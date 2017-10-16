@@ -1,15 +1,271 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My Homepage</title>
-  </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {margin:0;}
 
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  <body>
-    <h1>My homepage!</h1>
-    
-    <h2>
-        ;)
-    </h2>
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-size: 0px;
+}
 
-  </body>
-</html>
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+  }
+</style> 
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid white;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 450px;
+    margin: 50px;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+}
+</style>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 5px solid black;
+    background-color: white;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 50px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #bbb;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+</style>
+	<title>Lived3 Company</title> 
+	<script> 
+	var name = prompt("What's your name?"); 
+	var phrases = "";
+	//chooses phrases to go with name.
+	if (name == "") {
+	name = "Anonyomous".italics()
+	phrases = ("Ok, you don't want to tell us your name.");
+		alert(phrases)
+	} else if (name == "Phil Meyer") {
+	phrases = ("You have found a secret!");
+		alert(phrases)
+	}
+	;</script>
+<style>
+.us-img {
+  float: left;
+}
+.us-img img {
+  display: inline-block;
+  margin-right:28px;
+  width:100%;
+  height:auto;
+  max-width:450px;
+  max-height:450px;
+}
+</style>
+<style>
+.logo-img {
+  float: center;
+}
+.logo-img img {
+display: inline-block;
+  width:100%;
+  height:auto;
+  max-width:200px;
+  max-height:75px;
+}
+</style>
+<style>
+.contacts-img {
+  float: left;
+}
+.contacts-img img {
+  border-radius: 50px;
+  display: inline-block;
+  margin-right:0px;
+  width:100%;
+  height:auto;
+  max-width:350px;
+  max-height:350px;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+	<div class="logo-img">
+	<center><p><img class="img-responsive" src="logo.png" alt="Lived3 Logo" width="200" height="75"></p></center>
+	</div>
+<center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
+  <button class="tablinks" onclick="openCity(event, 'Our Work')">Our Work</button>
+  <button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
+  <button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
+  
+</div>
+</center>
+</div>
+<div class="main">
+<span style="display:inline-block; height: 160px;"></span></font>
+<font size = 6><center><h3> Welcome <script>
+	if (name == "Phil Meyer") {
+	document.write("! You have reached the secret page. (Work in Progress)")
+	} else {
+	document.write(" " + name + "!")
+	}
+	</script></h3></center>
+ <span style="display:inline-block; height: 75px;"></span></font>
+<div id="Events" class="tabcontent">
+	<center><h3><font size = 10>List of <em>upcoming events:</em> </font></h3>
+	<font size = 5>
+	<p> <strong>Performing new single "You're not Worth My Time"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
+	<p><strong>Displaying 2 Brand-New upcoming Short Films</strong> at Film competition <em><strong>October 20 2017.</em></strong></center>
+	</font>
+	</font>
+</div>
+
+<div id="Our Work" class="tabcontent">
+ <div class="container">
+<header>
+	<h2><font size = 10>Our Work</font></h2>
+</header>
+	<center><h1>See our first films such as <em>The Clone</em> that started it all!</h1>
+	<font size = 5><p><a href= "https://www.youtube.com" title="Bands Webpage">Click here</a> to see our youtube page of our original songs and films.</p>
+	<p></p>
+	<p> <a href="https://www.youtube.com/" title="YouTube!"> Videos here</a> for entertainment </p>
+	<h2>Google</h2>
+	<p><a href="https://docs.google.com/" title="Google Docs Homepage">Google Docs</a>,where song writing happens.<p>
+
+	 <span style="display:inline-block; height: 200px;"></span>	
+	 <p><strong>(This website is also work by Phil Meyer!)<strong></center>
+	 </font>
+	</div>
+</div>
+<div id="Contacts" class="tabcontent">
+ <div class="container">
+<header>
+	<h2><font size = 10>Contacts</font></h2>
+</header>
+	<center><h1>Social Media</h1>
+	  <span style="display:inline-block; height: 50px;"></span>
+		<a href="https://www.youtube.com/" target="_blank">
+	 <div class="contacts-img">
+	  <img  class="img-responsive" src="youtube.png" alt="Youtube" width="350" height="350">
+		<center><font size = 5>Subscribe on Youtube!</center></a>
+	</div>
+	<a href="https://www.instagram.com/phil.meyer/" target="_blank">
+	 <div class="contacts-img">
+	  <img  class="img-responsive" src="instagram.JPG" alt="Instagram" width="350" height="350" >
+		<center>Follow on Instagram!</center></a>
+	</div>
+	 <div class="contacts-img">
+	  <img  class="img-responsive" src="snapcode.JPG" alt="snapcode" width="350" height="350" >
+		<center>Add on Snapchat!</center>
+    </div> 
+</font>
+	</a>
+	</div>
+</div>
+<div id="About Us" class="tabcontent">
+<header>
+   <h1>About Us</h1>
+  
+</header>
+ <div class="us-img">
+	<center> <h2>Photo of Us</h2></center>
+	  <img  class="img-responsive" src="IMG_0763 (2).JPG" alt="Our photo" width="450" height="450" >
+    </div> 
+    <h1><font size = 10>Who are we?</font></h1>
+  <p><font size=5><strong>LiveD3</strong> is a band, software development team, and film studio.</p>
+  <p>We are twin brothers, who share a large passion in music, film, and programming. Both starting at 9 years old in playing music, and starting film freshmen year, still will continue persuing their passion, Now 15 years old. We work together as one, outputing each and every piece of work as if it were our last, making it our best.</p>
+  <p>Our goal in our work is to bring joy and inspire others, which neither has failed.</p>
+  <p>In our films and other projects, creativity is key, no matter how crazy or childlike our ideas are. Our music tends to conduct a more mature side. We have put all of our natural creativity and work in our pieces, with each one representing our current skill and mind sets.</p>
+  <span style="display:inline-block; height: 100px;"></span></font>
+  <p><h3><font size = 5>Run and Founded by the creative <em>Phil Meyer</em>(left). Co-Founded and Assisted by talented <em>Dallas Meyer<em>(right).</font></h3></p>
+    </div>
+  <span style="display:inline-block; height: 50px;"></span></font>
+
+<script>
+function openCity(evt, cityName) {
+	window.scrollTo(0, 0);
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}	
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+</body>
+</html> 
