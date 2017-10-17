@@ -122,18 +122,15 @@ div.tab button.active {
 </style>
 	<title>Lived3</title> 
 	<script> 
-	var name = prompt("What's your name?"); 
-	var phrases = "";
-	//chooses phrases to go with name.
-	if (name == "") {
-	name = "Anonyomous".italics()
-	phrases = ("Ok, you don't want to tell us your name.");
-		alert(phrases)
-	} else if (name == "Phil Meyer") {
-	phrases = ("You have found a secret!");
-		alert(phrases)
-	}
-	;</script>
+	function myFunction() {
+    var x = document.getElementById("Navbar");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+	</script>
 <style>
 .us-img {
   float: left;
@@ -149,13 +146,13 @@ div.tab button.active {
 </style>
 <style>
 .logo-img {
-  float: center;
+
 }
 .logo-img img {
 display: inline-block;
   width:100%;
   height:auto;
-  max-width:200px;
+  max-width:150px;
   max-height:75px;
 }
 </style>
@@ -173,19 +170,34 @@ display: inline-block;
   max-height:350px;
 }
 </style>
+<style>
+.menubutton {
+    background-color: #000000; 
+    border: none;
+    color: black;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+}
+Try it Yourself »
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 <div class="navbar">
-	<div class="logo-img">
-	<center><p><img class="img-responsive" src="logo.png" alt="Lived3 Logo" width="200" height="75"></p></center>
-	</div>
-<center>
-<div class="tab">
+	<center>
+		<img class="img-responsive" src="logo44.png" alt="Lived3 Logo" width="150" height="75" style="margin-left:70px">
+	<button class="menubutton" onclick="myFunction()" style="float:right" ><img class="img-responsive" src="menu.png" width="100" height="75"></button>
+</center>
+<center><div id="Navbar">
+	<div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
   <button class="tablinks" onclick="openCity(event, 'Our Work')">Our Work</button>
   <button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
   <button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
-  
+	</div>
 </div>
 </center>
 </div>
@@ -202,7 +214,7 @@ display: inline-block;
 <div id="Events" class="tabcontent">
 	<center><h3><font size = 10>List of <em>Past events:</em> </font></h3>
 	<font size = 5>
-	<p> <strong>Performied new single "Strength Over Anger"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
+	<p> <strong>Performed new single "Strength Over Anger"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
 	<center><h3><font size = 10>List of <em>upcoming events:</em> </font></h3>
 	<font size = 5>
 	<p><strong>Displaying 2 Brand-New upcoming Short Films</strong> at Film competition <em><strong>October 20 2017.</em></strong></center>
@@ -287,6 +299,9 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+	if ($(window).width() < 800) {
+	myFunction();
+	}
 }	
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
