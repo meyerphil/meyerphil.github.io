@@ -196,6 +196,24 @@ Try it Yourself »
   max-height:700px;
 }
 </style>
+<style>
+/* Youtube Reflexive */
+.vid-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 35px; height: 0; overflow: hidden;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 </head>
 <body>
 <div class="navbar">
@@ -228,9 +246,11 @@ Try it Yourself »
 <div id="Events" class="tabcontent">
 	<center><h3><font size = 10>List of <em>Past events:</em> </font></h3>
 	<div class="banner-img">
-	<img src="awesome.png" class="img-responsive" height="1000" width="1700"><iframe class="img-responsive" width="854" height="480" src="https://www.youtube.com/embed/FEShFTTQoSk" frameborder="0" allowfullscreen></iframe>
+	<img src="awesome.png" class="img-responsive" height="1000" width="1700">
 	</div>
-
+	<div class="vid-container">
+		<iframe width="854" height="480" src="https://www.youtube.com/embed/FEShFTTQoSk" frameborder="0" allowfullscreen></iframe>
+	</div>
 	<font size = 5>
 	<p> <strong>Performed new single "Strength Over Anger"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
 	<center><h3><font size = 10>List of <em>upcoming events:</em> </font></h3>
