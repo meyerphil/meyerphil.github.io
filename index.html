@@ -196,6 +196,25 @@ Try it Yourself »
   max-height:700px;
 }
 </style>
+<style>
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.video-container{
+
+max-width: 1000px;
+}
+	</style>
 </head>
 <body>
 <div class="navbar">
@@ -245,10 +264,10 @@ Try it Yourself »
 	<h2><font size = 10>Our Work</font></h2>
 </header>
 	<p></p>
-	<div class="banner-img">
-		<center><img src="thecloneshot.JPG" class="img-responsive" height="700">
-			<img src="thecontractshot.JPG" class="img-responsive" height="700">
-		</center>
+	<div class = "video-container">
+   		   <div class = "video-responsive iframe">
+          		<iframe width="854" height="480" src="https://www.youtube.com/embed/FEShFTTQoSk" frameborder="0" allowfullscreen></iframe>
+     		 </div>
 	 </div>
 	<center><h1>See our first films such as <em>The Clone</em> that started it all!</h1>
 	<font size = 5><p><a href= "https://www.youtube.com/channel/UC8rg8oLntuxlTZOOIKWA3Vg" title="Youtube Channel" target="_blank">
