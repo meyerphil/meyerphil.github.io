@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -28,7 +28,7 @@ body {margin:0;}
 
 .navbar {
   overflow: hidden;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,11 +50,10 @@ body {margin:0;}
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
   }
-</style> 
+</style>
 <style>
 div.container {
     width: 100%;
-    border: 1px solid white;
 }
 
 header, footer {
@@ -84,18 +83,20 @@ nav ul a {
 }
 </style>
 <style>
-body {font-family: "Lato", sans-serif;}
+body {font-family: "Lato", sans-serif;
+background-image: url("newstand.JPG");
+}
 
 /* Style the tab */
 div.tab {
     overflow: hidden;
-    border: 5px solid black;
-    background-color: white;
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, .85);
 }
 
 /* Style the buttons inside the tab */
 div.tab button {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0);
     float: center;
     border: none;
     outline: none;
@@ -103,6 +104,7 @@ div.tab button {
     padding: 5px 50px;
     transition: 0.3s;
     font-size: 20px;
+	color:white;
 }
 
 /* Change background color of buttons on hover */
@@ -112,7 +114,8 @@ div.tab button:hover {
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.2);
+	text-decoration: underline;
 }
 
 /* Style the tab content */
@@ -121,8 +124,8 @@ div.tab button.active {
     padding: 6px 12px;
 }
 </style>
-	<title>Lived3</title> 
-	<script> 
+<title>Lived3</title>
+<script> 
 	function myFunction() {
     var x = document.getElementById("Navbar");
     if (x.style.display === "none") {
@@ -173,9 +176,9 @@ display: inline-block;
 </style>
 <style>
 .menubutton {
-    background-color: #000000; 
+    background-color: rgba(0, 0, 0, 0); 
     border: none;
-    color: black;
+    color: rgba(0, 0, 0, 0);
     padding: 0px 0px;
     text-align: center;
     text-decoration: none;
@@ -229,138 +232,143 @@ max-width: 1000px;
 </head>
 <body>
 <div class="navbar">
-	<center>
-		<img class="img-responsive" src="logo44.png" alt="Lived3 Logo" width="150" height="75" style="margin-left:70px">
-	<button class="menubutton" onclick="myFunction()" style="float:right" ><img class="img-responsive" src="menu.png" width="100" height="75"></button>
+<center style="background-color: rgba(0, 0, 0, 0.87);">
+<img class="img-responsive" src="logo44.png" alt="Lived3 Logo" width="150" height="75" style="margin-left:70px">
+<button class="menubutton" onclick="myFunction()" style="float:right"><img class="img-responsive" src="menu44.png" width="100" height="75"></button>
 </center>
 <center><div id="Navbar">
-	<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
-  <button class="tablinks" onclick="openCity(event, 'Our Work')">Our Work</button>
-  <button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
-  <button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
-	</div>
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
+<button class="tablinks" onclick="openCity(event, 'Our Work')">Our Work</button>
+<button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
+<button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
+</div>
 </div>
 </center>
 </div>
-<div class="main">
+<div class="main" style="color:white;">
 <span style="display:inline-block; height: 160px;"></span></font>
 <font size = 6><center><h3> Welcome!
-	<script>
+<script>
 	if (name == "Phil Meyer") {
 	document.write("! You have reached the secret page. (Work in Progress)")
 	} else {
 	document.write(" " + name)
 	}
 	</script>
-	</h3></center>
- <span style="display:inline-block; height: 75px;"></span></font>
-<div id="Events" class="tabcontent">
+</h3></center>
+<span style="display:inline-block; height: 75px;"></span></font>
+<center>
+<div id="Events" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%"
+>
 <header>
-	<h2><font size = 10>Events</font></h2>
+<h2><font size = 10>Events</font></h2>
 </header>
-  <div class="bigbanner-img">
- <center> <img src="awesome.png" class="img-responsive"  style="margin-top:30px; margin-bottom:50px"></center>
-  </div>
-	<center><h3><font size = 10>List of <em>Past events:</em> </font></h3>
-	<div class = "video-container">
-		<div class = "video-responsive iframe">
-			<iframe width="854" height="480" src="https://www.youtube.com/embed/UKNBNqvZ0hE" frameborder="0" allowfullscreen></iframe>
- 		</div>
-	</div>
-		<font size = 5>
-		<p><strong>Peformed cover of "Symphony of Destruction" by Megadeth</strong> at Agoura High School - Battle of the Bands <strong><em>October 7 2016. 7:00pm-9:00pm</em></strong></p>
-		</font>
-		 <span style="display:inline-block; height: 50px;"></span></font>
-	<div class = "video-container">
-		<div class = "video-responsive iframe">
-			<iframe width="854" height="480" src="https://www.youtube.com/embed/FEShFTTQoSk" frameborder="0" allowfullscreen></iframe>
- 		</div>
-	</div>
-	<font size = 5>
-	<p> <strong>Performed new single "Strength Over Anger"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
-	<center><h3><font size = 10>List of <em>upcoming events:</em> </font></h3>
-	<font size = 5>
-	<p><strong>(POSTPONED)Displaying 2 Brand-New upcoming Short Films</strong> at Film competition <em><strong>TBA.</em></strong></center>
-	</font>
-	</font>
+<div class="bigbanner-img">
+<center> <img src="awesome.png" class="img-responsive" style="margin-top:30px; margin-bottom:50px"></center>
 </div>
-
-<div id="Our Work" class="tabcontent">
- <div class="container">
-<header>
-	<h2><font size = 10>Our Work</font></h2>
-</header>
-	<p></p>
-	<div class="banner-img">
- 	<center>
-		<img src="thecloneshot.JPG" class="img-responsive" height="700">
- 		<img src="thecontractshot.JPG" class="img-responsive" height="700">
- 	</center>
-	 </div>
-	<center><h1>See our first films such as <em>The Clone</em> that started it all!</h1>
-	<div class = "video-container">
-		<div class = "video-responsive iframe">
-			<iframe width="854" height="480" src="https://www.youtube.com/embed/_Er_yYyU3dU" frameborder="0" allowfullscreen></iframe>
- 		</div>
-	</div>
-	<font size = 5><p><a href= "https://www.youtube.com/channel/UC8rg8oLntuxlTZOOIKWA3Vg" title="Youtube Channel" target="_blank">
-	  <img  class="img-responsive" src="logo.png" alt="logo" width="150" height="150" align="middle" style="margin-right:60px; margin-left:30px">
-	Visit our youtube page</a> of our original songs and films.</p>
-	</center>
-	 <span style="display:inline-block; height: 200px;"></span>	
-	 <p><strong>(This website is also work by Phil Meyer!)<strong></center>
-	 </font>
-	</div>
+<center><h3><font size = 10>List of <em>Past events:</em> </font></h3>
+<div class="video-container">
+<div class="video-responsive iframe">
+<iframe width="854" height="480" src="https://www.youtube.com/embed/UKNBNqvZ0hE" frameborder="0" allowfullscreen></iframe>
 </div>
-<div id="Contacts" class="tabcontent">
- <div class="container">
-<header>
-	<h2><font size = 10>Contacts</font></h2>
-</header>
-	<center><h1>Social Media, Get Updates!</h1>
-	  <span style="display:inline-block; height: 50px;"></span>
-		<a href="https://www.youtube.com/channel/UC8rg8oLntuxlTZOOIKWA3Vg" target="_blank">
-	 <div class="contacts-img">
-	  <img  class="img-responsive" src="youtube.png" alt="Youtube" width="350" height="350">
-		<center><font size = 5>Subscribe on Youtube!</center></a>
-	</div>
-	<a href="https://www.instagram.com/lived3/" target="_blank">
-	 <div class="contacts-img">
-	  <img  class="img-responsive" src="instagram.jpg" alt="Instagram" width="350" height="350" >
-		<center>@lived3</center></a>
-		<p>Follow the band on Instagram!</p>
-		<p>Or even my personal <a href="https://www.instagram.com/phil.meyer/" target="_blank">@phil-meyer</a></p>
-	</div>
-	<a href="https://twitter.com/LiveD3_Official" target="_blank">
-	<div class="contacts-img">
-	  <img  class="img-responsive" src="twitterlogo.png" alt="twitter" width="350" height="350" style="margin-top:50px;">  
-	  <p>@LiveD3_Official</p></a>
-	  <center>Follow us on Twitter!</center>
-	</div>
+</div>
+<font size = 5>
+<p><strong>Peformed cover of "Symphony of Destruction" by Megadeth</strong> at Agoura High School - Battle of the Bands <strong><em>October 7 2016. 7:00pm-9:00pm</em></strong></p>
 </font>
-	</a>
-	</div>
+<span style="display:inline-block; height: 50px;"></span></font>
+<div class="video-container">
+<div class="video-responsive iframe">
+<iframe width="854" height="480" src="https://www.youtube.com/embed/FEShFTTQoSk" frameborder="0" allowfullscreen></iframe>
 </div>
-<div id="About Us" class="tabcontent">
+</div>
+<font size = 5>
+<p> <strong>Performed new single "Strength Over Anger"</strong> at Agoura High School - Battle of the Bands <strong><em>October 13 2017. 7:00pm-9:00pm </em></strong></p>
+<center><h3><font size = 10>List of <em>upcoming events:</em> </font></h3>
+<font size = 5>
+<p><strong>(POSTPONED)  Displaying 2 Brand-New upcoming Short Films</strong> at Film competition <em><strong>TBA.</em></strong></center>
+</font>
+</font>
+</div>
+</center>
+<center>
+<div id="Our Work" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<div class="container">
 <header>
-   <h1>About Us</h1>
-  
-</header>
- <div class="us-img">
-	<center> <h2>Photo of Us</h2></center>
-	  <img  class="img-responsive" src="IMG_0763 (2).JPG" alt="Our photo" width="450" height="450" >
-    </div> 
-    <h1><font size = 10>Who are we?</font></h1>
-  <p><font size=5><strong>LiveD3</strong> is a band, software development team, and film studio.</p>
-  <p>We are twin brothers, who share a large passion in music, film, and programming. Both starting at 9 years old in playing music, and starting film freshmen year, still will continue pursuing our passion. Now 15 years old, we work together as one, outputting each and every piece of work as if it were our last, making it our best.</p>
-  <p>Our goal in our work is to bring joy and inspire others, which neither has failed.</p>
-  <p>In our films and other projects, creativity is key, no matter how crazy or childlike our ideas are. Our music tends to conduct a more mature side. We have put all of our natural creativity and work in our pieces, with each one representing our current skill and mind sets.</p>
-  <span style="display:inline-block; height: 100px;"></span></font>
-  <p><h3><font size = 5>Run and Founded by the creative <em>Phil Meyer</em>(left). Co-Founded and Assisted by talented <em>Dallas Meyer<em>(right).</font></h3></p>
-    </div>
-  <span style="display:inline-block; height: 50px;"></span></font>
 
+<h2><font size = 10>Our Work</font></h2>
+</header>
+<p></p>
+<div class="banner-img">
+<center>
+<img src="thecloneshot.JPG" class="img-responsive" height="700">
+<img src="thecontractshot.JPG" class="img-responsive" height="700">
+</center>
+</div>
+<center><h1>See our first films such as <em>The Clone</em> that started it all!</h1>
+<div class="video-container">
+<div class="video-responsive iframe">
+<iframe width="854" height="480" src="https://www.youtube.com/embed/_Er_yYyU3dU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<font size = 5><p><a href="https://www.youtube.com/channel/UC8rg8oLntuxlTZOOIKWA3Vg" title="Youtube Channel" target="_blank">
+<img class="img-responsive" src="logo.png" alt="logo" width="150" height="150" align="middle" style="margin-right:60px; margin-left:30px">
+Visit our youtube page</a> of our original songs and films.</p>
+</center>
+<span style="display:inline-block; height: 200px;"></span>
+<p><strong>(This website is also work by Phil Meyer!)<strong>
+</font>
+</div>
+</div>
+<center>
+<div id="Contacts" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<div class="container">
+<header>
+<h2><font size = 10>Contacts</font></h2>
+</header>
+<center><h1>Social Media, Get Updates!</h1>
+<span style="display:inline-block; height: 50px;"></span>
+<a href="https://www.youtube.com/channel/UC8rg8oLntuxlTZOOIKWA3Vg" target="_blank">
+<div class="contacts-img">
+<img class="img-responsive" src="youtube.png" alt="Youtube" width="350" height="350">
+<center><font size = 5>Subscribe on Youtube!</center></a>
+</div>
+<a href="https://www.instagram.com/lived3/" target="_blank">
+<div class="contacts-img">
+<img class="img-responsive" src="instagram.jpg" alt="Instagram" width="350" height="350">
+<center>@lived3</center></a>
+<p>Follow the band on Instagram!</p>
+<p>Or even my personal <a href="https://www.instagram.com/phil.meyer/" target="_blank">@phil-meyer</a></p>
+</div>
+<a href="https://twitter.com/LiveD3_Official" target="_blank">
+<div class="contacts-img">
+<img class="img-responsive" src="twitterlogo.png" alt="twitter" width="350" height="350" style="margin-top:50px;">
+<p>@LiveD3_Official</p></a>
+<center>Follow us on Twitter!</center>
+</div>
+</font>
+</a>
+<span style="display:inline-block; height: 700px;"></span>
+</div>
+</div>
+<center>
+<div id="About Us" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<header>
+<h1>About Us</h1>
+</header>
+<div class="us-img">
+<center> <h2>Photo of Us</h2></center>
+<img class="img-responsive" src="IMG_0763 (2).JPG" alt="Our photo" width="450" height="450">
+</div>
+<h1><font size = 10>Who are we?</font></h1>
+<p><font size=5><strong>LiveD3</strong> is a band, software development team, and film studio.</p>
+<p>We are twin brothers, who share a large passion in music, film, and programming. Both starting at 9 years old in playing music, and starting film freshmen year, still will continue pursuing our passion. Now 15 years old, we work together as one, outputting each and every piece of work as if it were our last, making it our best.</p>
+<p>Our goal in our work is to bring joy and inspire others, which neither has failed.</p>
+<p>In our films and other projects, creativity is key, no matter how crazy or childlike our ideas are. Our music tends to conduct a more mature side. We have put all of our natural creativity and work in our pieces, with each one representing our current skill and mind sets.</p>
+<span style="display:inline-block; height: 100px;"></span></font>
+<p><h3><font size = 5>Run and Founded by the creative <em>Phil Meyer</em>(left). Co-Founded and Assisted by talented <em>Dallas Meyer<em>(right).</font></h3></p>
+</div>
+<span style="display:inline-block; height: 50px;"></span></font>
 <script>
 function openCity(evt, cityName) {
 	window.scrollTo(0, 0);
@@ -384,4 +392,4 @@ document.getElementById("defaultOpen").click();
 </script>
 </div>
 </body>
-</html> 
+</html>
