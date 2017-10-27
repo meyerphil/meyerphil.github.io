@@ -84,7 +84,7 @@ nav ul a {
 </style>
 <style>
 body {font-family: "Lato", sans-serif;
-background-image: url("newstand.JPG");
+background-color:black;
 }
 
 /* Style the tab */
@@ -238,10 +238,10 @@ max-width: 1000px;
 </center>
 <center><div id="Navbar">
 <div class="tab">
-<button class="tablinks" onclick="openCity(event, 'Events')">Events</button>
-<button class="tablinks" onclick="openCity(event, 'Our Work')">Our Work</button>
-<button class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</button>
-<button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
+<button class="tablinks" onclick="openCity(event, 'Events'); document.body.style.cssText+=';background-image: url(newevent.PNG); background-attachment: fixed; background-size:cover; background-position:center; background-repeat: no-repeat;';">Events</button>
+<button class="tablinks" onclick="openCity(event, 'Our Work'); document.body.style.cssText+=';background-image: url(newstand.JPG); background-attachment: fixed; background-size:cover; background-position:center; background-repeat: no-repeat;';">Our Work</button>
+<button class="tablinks" onclick="openCity(event, 'Contacts'); document.body.style.cssText+=';background-image: url(newstand.JPG); background-attachment: fixed; background-size:cover; background-position:center; background-repeat: no-repeat;';">Contacts</button>
+<button class="tablinks" onclick="openCity(event, 'About Us'); document.body.style.cssText+=';background-image: url(newstand.JPG); background-attachment: fixed; background-size:cover; background-position:center; background-repeat: no-repeat;';" id="defaultOpen">About Us</button>
 </div>
 </div>
 </center>
@@ -259,14 +259,11 @@ max-width: 1000px;
 </h3></center>
 <span style="display:inline-block; height: 75px;"></span></font>
 <center>
-<div id="Events" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%"
+<div id="Events" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.75); width:90%"
 >
 <header>
 <h2><font size = 10>Events</font></h2>
 </header>
-<div class="bigbanner-img">
-<center> <img src="awesome.png" class="img-responsive" style="margin-top:30px; margin-bottom:50px"></center>
-</div>
 <center><h3><font size = 10>List of <em>Past events:</em> </font></h3>
 <div class="video-container">
 <div class="video-responsive iframe">
@@ -292,7 +289,7 @@ max-width: 1000px;
 </div>
 </center>
 <center>
-<div id="Our Work" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<div id="Our Work" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.75); width:90%">
 <div class="container">
 <header>
 
@@ -321,7 +318,7 @@ Visit our youtube page</a> of our original songs and films.</p>
 </div>
 </div>
 <center>
-<div id="Contacts" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<div id="Contacts" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.75); width:90%">
 <div class="container">
 <header>
 <h2><font size = 10>Contacts</font></h2>
@@ -352,7 +349,7 @@ Visit our youtube page</a> of our original songs and films.</p>
 </div>
 </div>
 <center>
-<div id="About Us" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.6); width:90%">
+<div id="About Us" class="tabcontent" style="background-color: rgba(0, 0, 0, 0.75); width:90%">
 <header>
 <h1>About Us</h1>
 </header>
