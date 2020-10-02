@@ -57,7 +57,7 @@
 </center>
 </div>
 <div class="main" style="color:white;">
-<span style="display:inline-block; height: 20px;"></span></font>
+<span style="display:inline-block; height: 60px;"></span></font>
 <font size = 6><center><h3 id = "welcomePrompt"> Welcome! Navigate using Menu at top of screen.
 <script>
 	if (name == "Phil Meyer") {
@@ -178,7 +178,9 @@ Visit our youtube page</a> of our original songs and films.</p>
 <span style="display:inline-block; height: 50px;"></span></font>
 <script>
 function openCity(evt, cityName) {
-	window.scrollTo(0, 0);
+    if(cityName != 'About Us'){
+        document.getElementById("welcomePrompt").style.display = "none";
+    }
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -193,9 +195,11 @@ function openCity(evt, cityName) {
 	if ($(window).width() < 800) {
 	myFunction();
 	}
+    window.scrollTo(0, 0);
 }	
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+window.scrollTo(0, 0);
 </script>
 </div>
 </body>
